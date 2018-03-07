@@ -48,7 +48,7 @@ class FetchProducts
                   puts 'jo', j;
                   puts priceData.to_json;
                   foundedProduct[j-1].addPrice(priceData);
-                  sleep(rand(0..2))
+                  # sleep(rand(0..1))
                 end
               end
             end

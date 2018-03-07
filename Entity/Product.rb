@@ -1,4 +1,4 @@
-require 'Entity/PriceRange';
+require_relative 'PriceRange';
 
 class Product
   def initialize(id, name, size, description, link, image)

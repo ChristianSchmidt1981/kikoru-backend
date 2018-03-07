@@ -1,5 +1,5 @@
-require "Provider/AbstractProvider"
-require "Entity/SinglePrice"
+require_relative "AbstractProvider"
+require_relative "../Entity/SinglePrice"
 
 class Zalando < AbstractProvider
   def self.getProduct (product)

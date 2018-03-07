@@ -1,11 +1,10 @@
-require "Provider/Otto"
-require "Provider/Zalando"
-require "Provider/Amazon"
-require "Entity/Product"
-require "SearchProduct";
-require "rubygems"
-require "faraday"
-require "json"
+require_relative "Provider/Otto"
+require_relative "Provider/Zalando"
+require_relative "Provider/Amazon"
+require_relative "Entity/Product"
+require_relative "SearchProduct";
+#require "rubygems";
+#require "faraday";
 
 
 class FetchProducts

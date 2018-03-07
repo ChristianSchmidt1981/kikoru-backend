@@ -1,5 +1,5 @@
-require "Provider/AbstractProvider"
-require "Entity/SinglePrice"
+require_relative "AbstractProvider"
+require_relative "../Entity/SinglePrice"
 
 class Otto < AbstractProvider
   def self.getProduct (product)

@@ -1,4 +1,4 @@
-require 'Entity/ProductGroup';
+require_relative 'Entity/ProductGroup';
 
 class ProductGroupList
   def get()

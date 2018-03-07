@@ -1,4 +1,4 @@
-require 'Entity/Product';
+require_relative 'Entity/Product';
 
 class SearchProduct
   def getByGroupId(productGroupId)

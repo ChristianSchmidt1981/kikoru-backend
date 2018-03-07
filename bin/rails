@@ -2,7 +2,7 @@
 
 require "webrick"
 require "cachy"
-require_relative "../fetchProducts"
+require_relative "../FetchProducts"
 require_relative "../ProductGroupList"
 require_relative "../SearchProduct"
 require "rubygems"

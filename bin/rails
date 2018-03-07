@@ -7,7 +7,7 @@ require_relative "../ProductGroupList"
 require_relative "../SearchProduct"
 require "rubygems"
 #require "faraday"
-#require "json"
+require "json"
 
 class MyServlet < WEBrick::HTTPServlet::AbstractServlet
     def do_GET (request, response)

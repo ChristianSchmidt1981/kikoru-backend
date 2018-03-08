@@ -57,7 +57,7 @@ class FetchProducts
     end
     
               
-    threads.each {|t| t.join}
+    #threads.each {|t| t.join}
             
     return foundedProduct;
   end

@@ -22,12 +22,12 @@ class MyServlet < WEBrick::HTTPServlet::AbstractServlet
              raise 'groupId id is missing!';
           end
           productContainer = FetchProducts.new();
-          productData = productContainer.get(request.query['id']);
+          productData = productContainer.get(request.query['id'].to_i);
           result = productData.to_json;
 
         when "/groupList"
           productGroup = ProductGroupList.new();
-          result = productGroup.get().to_json;
+          result = productGroup.get().getSubGroups().to_json;
 
         else
           result = "No such method"
@@ -37,7 +37,8 @@ class MyServlet < WEBrick::HTTPServlet::AbstractServlet
     end
 end
 
-server = WEBrick::HTTPServer.new(:Port => ARGV[2])
+port = ARGV[2] === NIL ? 1235 : ARGV[2];
+server = WEBrick::HTTPServer.new(:Port => port);
 
 server.mount "/", MyServlet
 

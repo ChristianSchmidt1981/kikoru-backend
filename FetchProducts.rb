@@ -46,7 +46,9 @@ class FetchProducts
 
                 if priceData then
                   foundedProduct[j-1].addPrice(priceData);
-                  sleep(rand(0..1))
+                  if (rand(0..1) === 1) {
+                    sleep(rand(0..1))
+                  }
                 end
               end
             end

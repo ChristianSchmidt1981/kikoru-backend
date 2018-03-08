@@ -1,41 +1,22 @@
-class PriceRange
-  def initialize(min, max)
-    @min = min;
-    @max = max;
+class SinglePrice
+  def initialize(company, id, name, price, currencyCode)
+    @company = company;
+    @id = id;
+    @name = name;
+    @price = price;
+    @currencyCode = currencyCode;
   end
   
-  def getMin()
-    return @min;
-  end
-
-  def getMax()
-    return @max;
-  end
-
-  def setMin(min)
-    @min = min;
+  def getPrice()
+    return @price;
   end
   
-  def setMax(max)
-    @max = max;
-  end
-  
-  def setAutomatic(value)
-    if (value < self.getMin() || self.getMin() === 0.0) then
-      if self.getMax() === 0.0 then
-        self.setMax(self.getMin);
-      end
-      self.setMin(value);
-    end
-    if (value > self.getMax()) then
-      self.setMax(value);
-    end
-  end
-
   def as_json(options={})
        {
-           min: @min,
-           max: @max,
+           company: @company,
+           id: @id,
+           name: @name,
+           price: @price
        }
    end
 

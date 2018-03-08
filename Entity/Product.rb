@@ -1,7 +1,7 @@
 require_relative 'PriceRange';
 
 class Product
-  def initialize(id, name, size, description, link, image)
+  def initialize(id, name, size, description, link, image, brand, material)
     @id = id;
     @name = name;
     @size = size; # array
@@ -10,6 +10,8 @@ class Product
     @image = image;
     @price = PriceRange.new(0.0, 0.0);
     @prices = Array.new();
+    @brand = brand;
+    @material = material;
   end
   
   def getName()
@@ -30,10 +32,12 @@ class Product
              id: @id,
              name: @name,
              price: @price,
+             prices: @prices,
              size: @size,
              description: @description,
              link: @link,
-             image: @image
+             image: @image,
+             brand: @brand
          }
      end
   

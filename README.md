@@ -6,7 +6,7 @@ application here:
 https://github.com/ChristianSchmidt1981/kikoru-frontend
 
 you found a demo here:
-https://kikoru.herokuapp.com/
+- https://kikoru.herokuapp.com/
 
 # Installation
 

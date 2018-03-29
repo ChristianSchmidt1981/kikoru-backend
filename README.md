@@ -5,6 +5,9 @@ frontend - application. you can download the frontend -
 application here:
 https://github.com/ChristianSchmidt1981/kikoru-frontend
 
+you found a demo here:
+https://kikoru.herokuapp.com/
+
 # Installation
 
 please install ruby v2.5.0 or higher. 
